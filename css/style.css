@@ -38,7 +38,7 @@ html,body{
 .page{
 	width: 100%;
 	max-width: 640px;
-	min-width: 600px;
+/* 	min-width: 600px; */
 	height: 100%;
 	/*border:1px solid;*/
 	margin: 0 auto;
