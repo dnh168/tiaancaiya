@@ -1,0 +1,380 @@
+@charset "utf-8";
+/*重置样式*/
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,li{list-style: none;}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.main{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+#wrap{
+	width: 100%;
+	height: 100%;
+	max-width: 640px;
+	min-width: 600px;
+	margin: 0 auto;
+	position: relative;
+}
+/*主体*/
+/*相同部分*/
+#same{
+	position: fixed;
+	opacity: 1;
+	z-index: 100;
+	top: 10px;
+	right: 30%;
+}
+#same img:hover{
+	cursor: pointer;
+}
+.page{
+	width: 100%;
+	max-width: 640px;
+	min-width: 600px;
+	height: 100%;
+	/*border:1px solid;*/
+	margin: 0 auto;
+	background: url(../images/bg.png);
+	background-size: 100% 100%;
+	transition:all 2s linear;
+	position: absolute;
+}
+.container{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+/*第一页开始*/
+.page1{
+	background: url(../images/5bcd785b00eb20b6.png) no-repeat,url(../images/0.png) 0px 350px no-repeat;
+}
+.touxiang img{
+	height: 148px;
+	border-radius: 70px;
+	position: absolute;
+	right: 20px;
+	bottom: 15px;
+}
+.touxiang{
+	height: 180px;
+	width: 180px;
+	background: url(../images/7b628a93f08d1e73.png);
+	background-size: 180px 180px;
+	position: relative;
+	left: 36%;
+	top: 20%;
+}
+.shejishi{
+	display: block;
+	font-size: 2em;
+	font-family:微软雅黑;
+	width: 230px;
+	height: 50px;
+	color: white;
+	background-color: rgba(170,170,162,0.6);
+	text-align: center;
+	margin: 80px auto 0;
+	line-height: 50px;
+}
+.page1-san{
+	width: 100px;
+}
+.page1 .top{
+	position: absolute;
+	left: 52%;
+	top: 50px;
+}
+.page1 .bottom{
+	position: absolute;
+	top: 135px;
+	left: 32%;
+	
+}
+.page1 .geren{
+	position: absolute;
+	bottom: 18%;
+	left: 28%;
+}
+.resume{
+	position: absolute;
+	left: 35%;
+	bottom: 10%;
+	z-index: 2;
+}
+.san1{
+	position: absolute;
+	left: 43%;
+	bottom: 4%;
+	z-index: 1;
+}
+/*第一页结束*/
+/*第二页开始*/
+.xinxi p{
+	font-size: 2em;
+	font-family: 黑体;
+	color: white;
+}
+.xinxi{
+	width: 170px;
+	height: 50px;
+	background-color: rgba(170,170,162,0.6);
+	text-align: center;
+	line-height: 50px;
+	margin: 50px auto 0;
+}
+.page2 .top{
+	width: 83px;
+	position: absolute;
+	right: 27%;
+	top: 5%;
+}
+.page2 .bottom{
+	width: 50px;
+	position: absolute;
+	left: 37%;
+	top: 11%;
+}
+.page2 .square-b{
+	position: relative;
+	left: 57px;
+	top: 50px;
+}
+.page2 .people{
+	position: relative;
+	left: 45%;
+	top: 15px;
+	z-index: 2;
+}
+.square-s{
+	position: relative;
+	bottom:200px;
+	left: 70px;
+	z-index: 3;
+}
+.page2 .birth{
+	position: relative;
+	bottom: 53%;
+	left: 86px;
+	color: white;
+	z-index: 4;
+	width: 222px;
+	text-align: center;
+}
+.page2 .birth p:nth-of-type(1){
+	font-size: 1.8em;
+	font-family: "微软雅黑";
+}
+.page2 .birth p:nth-of-type(2){
+	font-size: 2.4em;
+}
+.page2 .birth p:nth-of-type(3){
+	font-size: 1em;
+}
+.page2 .jieshao{
+	width: 300px;
+	color: white;
+	line-height: 30px;
+	font-size: 1.7em;
+	position: absolute;
+	bottom: 7%;
+	left: 12%;
+	z-index: 3;
+}
+.page2 .san-b{
+	height: 160px;
+	position: absolute;
+	bottom: 10%;
+	left: 39%;
+}
+.page2 .san-s{
+	height: 120px;
+	position: absolute;
+	bottom: 4%;
+	left: 32%;
+}
+/*第二页结束*/
+/*第三页开始*/
+.page3 .san-z{
+	width:350px;
+	position: absolute;
+	left: 22%;
+	top: 15px;
+}
+.page3 .grzz{
+	font-weight: bold;
+	color: white;
+	font-size: 2.4em;
+	width: 160px;
+	position: relative;
+	left: 37%;
+	top: 40px;
+}
+.zizhuan p{
+	display: block;
+	width: 434px;
+	font-size: 17px;
+	color: white;
+	position: relative;
+	top: 105px;
+	left: 16%;
+	line-height: 30px;
+}
+.zizhuan img{
+	position: absolute;
+	height: 70%;
+	width: 80%;
+	bottom: 60px;
+	left: 50px;
+}
+.page3 .san-z-s{
+	width: 130px;
+	position: absolute;
+	right: 25%;
+	top: 75px;
+}
+.page3 .bianjiao{
+	position:absolute;
+	bottom: 20px;
+	height: 50%;
+	width: 94%;
+}
+/*第三页结束*/
+/*第四页开始*/
+.page4 .san-p{
+	width:350px;
+	position: absolute;
+	left: 22%;
+	top: 15px;
+}
+.page4 .lianxi{
+	font-weight: bold;
+	color: white;
+	font-size: 2.4em;
+	width: 160px;
+	position: relative;
+	left: 37%;
+	top: 40px;
+}
+.lianxi-pic{
+	height: 430px;
+	position: absolute;
+	bottom: 80px;
+	left: 25%;
+}
+.page4 .contact{
+	border: 5px solid white;
+	height: 300px;
+	width: 300px;
+	position: relative;
+	left: 50px;
+	top: 26%;
+}
+.page4 .contact .for{
+	font-size: 3.4em;
+	font-weight: bold;
+	color: #F5BD28;
+	font-family: "微软雅黑";
+	margin: 20px 0 0 20px;
+}
+.page4 .contact .for span{
+	color: white;
+}
+.page4 .contact div{
+	border-top: 3px solid #F5BD28;
+	width: 260px;
+	color: #F5BD28;
+	font-size: 17px;
+	line-height: 30px;
+	font-family: "微软雅黑";
+	position: relative;
+	top: 15px;
+	left: 32px;
+}
+.page .fujia-b{
+	position: absolute;
+	right: 40%;
+	top: 17%;
+}
+.page .fujia-s{
+	position: absolute;
+	width: 60px;
+	right: 25%;
+	top: 20%;
+}
+.page4 .dianhua{
+	position: absolute;
+	bottom: 30px;
+	left: 45%;
+}
+/*第四页结束*/
+/*第五页开始*/
+.page5 .san-j{
+	width:350px;
+	position: absolute;
+	left: 22%;
+	top: 15px;
+}
+.page5 .jineng{
+	font-weight: bold;
+	color: white;
+	font-size: 2.4em;
+	width: 160px;
+	position: relative;
+	left: 37%;
+	top: 40px;
+}
+.jineng-k{
+	position: absolute;
+	left: 15%;
+	height: 70%;
+	width: 76%;
+	top: 23%;
+}
+.page5 li{
+	float: left;
+}
+.page5 ul{
+	overflow: hidden;
+	width: 500px;
+	height: 500px;
+	position: relative;
+	left: 7%;
+	top: 20%;
+}
+.page5 ul li img{
+	width: 90%;
+}
+.page5 ul li:nth-of-type(1){
+	position: relative;
+	left: 25px;
+}
+.page5 ul li:nth-of-type(2){
+	position: relative;
+	left: 140px;
+	top: 20px;
+}
+.page5 ul li:nth-of-type(3){
+	position: absolute;
+	left: 30px;
+	top: 220px;
+}
+.page5 ul li:nth-of-type(4){
+	position: relative;
+	top: 238px;
+	right: 100px;
+}
+.page5 ul li:nth-of-type(5){
+	position: absolute;
+	bottom: 20%;
+	right: 0%;
+}
+/*第五页结束*/

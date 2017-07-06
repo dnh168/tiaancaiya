@@ -1,0 +1,53 @@
+.rotate{animation: rotate 1s 0s ease-in;}
+.rotate-m{animation: rotate-m 1.4s 0s linear infinite;}
+.bai1{animation:bai1 1s 0s linear infinite;}
+.bai2{animation:bai2 1s 0s linear infinite;}
+.bai3{animation:bai3 1s 0s linear infinite;}
+.bai-k{animation:bai-k 1s 0s linear infinite;}
+.fadeInRight{animation:fadeInRight 0.4s 2s linear}
+.shejishi{animation: shejishi 0.5s 1s ease-in;}
+@keyframes rotate{
+	0%{transform: rotateZ(0deg);opacity: 0;}
+	80%{transform: rotate(360deg);opacity: 1;}
+	100%{transform: rotate(360deg);}
+}
+@keyframes rotate-m{
+	0%{transform: rotateZ(0deg);}
+	100%{transform: rotate(360deg);}
+}
+@keyframes bai1{
+	0%{transform: rotate(0deg);}
+	20%{transform: rotate(-10deg);}
+	40%{transform: rotate(10deg);}
+	60%{transform: rotate(-10deg);}
+	80%{transform: rotate(10deg);}
+	100%{transform: rotate(0deg);}
+}
+@keyframes bai3{
+	0%{transform: rotate(5deg);}
+	20%{transform: rotate(0deg);}
+	40%{transform: rotate(-5deg);}
+	60{transform: rotate(0deg);}
+	80%{transform: rotate(5deg);}
+	100%{transform: rotate(0deg);}
+}
+@keyframes bai-k{
+	0%{transform: rotate(-5deg);}
+	20%{transform: rotate(0deg);}
+	40%{transform: rotate(5deg);}
+	60{transform: rotate(0deg);}
+	80%{transform: rotate(-5deg);}
+	100%{transform: rotate(0deg);}
+}
+@keyframes bai2{
+	0%{transform: rotate(0deg);}
+	20%{transform: rotate(-10deg);}
+	40%{transform: rotate(10deg);}
+	60%{transform: rotate(-10deg);}
+	80%{transform: rotate(10deg);}
+	100%{transform: rotate(0deg);}
+}
+@keyframes shejishi{
+	0%{transform: translateX(100px);opacity: 0;}
+	100%{transform: translateX(0);opacity: 1;}
+}

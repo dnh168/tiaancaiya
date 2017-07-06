@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人简介</title>
+		<meta name="viewport" content="width=device-width,
+		 user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script type="text/javascript" src="js/touch-0.2.14.min.js"></script>
+		<script>
+$(document).ready(function(){
+	var curIndex = 0;
+	var pageNum = $('.page').length-1;
+	touch.on('.main','swipeup',function(){
+//		alert("aaa");
+		if(curIndex < pageNum){
+			$('.page').eq(curIndex).addClass('pageUp');
+//			$(".page").find('.ani').removeClass('hide');
+			curIndex=curIndex+1;	
+			$('.page').eq(curIndex).removeClass('pageDown');
+//			$(".page").find('.ani').addClassremoveClass('hide');
+		}		
+		
+	})
+	touch.on('.main','swipedown',function(){
+		if(curIndex > 0){
+			$('.page').eq(curIndex).addClass('pageDown');
+//			$(".page").find('.ani').addClass('hide');
+			curIndex=curIndex-1;	
+			$('.page').eq(curIndex).removeClass('pageUp');
+//			$(".page").find('.ani').removeClass('hide');
+		}		
+	})
+})
+$("#same img").click(function(){
+	if($("#test").pause()){
+		$("#test").play();
+	}else{
+		$("#test").pause();
+	}
+})
+		</script>
+		<style type="text/css">
+			/*上下滑动*/
+			.pageUp{transform:translateY(-960px);}
+			.pageDown{transform:translateY(960px)}
+			/*.hide{display: none;}*/
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="same">
+				<audio src="images/鹿晗 - 勋章 (Live).mp3"  autoplay loop"></audio>
+				<!--<img src="images/music.png" class="rotate-m"/>-->
+			</div>
+			<!--主体部分-->
+			<div class="main">
+				<!--第一页-->
+				<div class="page page1">
+					<div class="container">
+						<img class="page1-san top bai1" src="images/884cea834a920428.png"/>
+						<img class="page1-san bottom bai2" src="images/e9609b9d2436d957.png"/>
+						<p class="shejishi">视觉设计师</p>
+						<div class="touxiang">
+							<img src="images/235x246_636310945043774284.png" class="rotate ani"/>
+						</div>
+						<img src="images/d7fb783eaa80d7ba.png" class="geren"/>
+						<img src="images/9d82a3f0408ca713.png" class="resume bai3"/>
+						<img src="images/44f6d824acf16420.png" class="san1"/>
+					</div>
+				</div>
+				<!--第二页-->
+				<div class="page page2 pageDown">
+					<div class="container">
+						<img class="top bai1" src="images/884cea834a920428.png"/>
+						<img class="bottom bai2" src="images/e9609b9d2436d957.png"/>
+						<div class="xinxi">
+							<p><b>个人信息</b></p>
+						</div>
+						<img src="images/235x246_636310945043774284.png" class="people bai3" />
+						<img src="images/big.png" class="square-b bai-k"/>
+						<img src="images/little.png" class="square-s bai3"/>
+						<div class="birth bai-k">
+							<p>DATE OF BIRTH</p>
+							<p>1998.2.7</p>
+							<p>I WAS BORN IN A BEAUTIFUL CITY AND HAPPY FAMILY</p>
+						</div>
+						<div class="jieshao">
+							姓名：徐连亚<br />
+							性别：男<br />
+							院校：冀中职业学院<br />
+							专业：web前端<br />
+							家乡：唐山<br />
+							爱好：听音乐						
+						</div>
+						<img src="images/44f6d824acf16420.png" class="san-b"/>
+						<img src="images/44f6d824acf16420.png" class="san-s"/>
+					</div>
+				</div>
+				<!--第三页-->
+				<div class="page page3 pageDown">
+					<div class="container">
+						<img src="images/130x40_636311337662530139.png" class="san-z"/>
+						<img src="images/130x40_636311337662530139.png" class="san-z-s bai2"/>
+						<p class="grzz bai3">个人自传</p>
+						<div class="zizhuan">
+							<img src="images/zizhuan.png" class="bai-k"/>
+							<p>
+								  &nbsp;&nbsp;我是一名在校的大学生，目前就读于冀中
+								  职业学院，我的家乡是河北唐山，一个美丽的城市。
+								  我喜欢听音乐,做运动。喜欢朴素的装束，喜欢无拘无束
+								  的生活，喜欢向往自由，喜欢那种平淡但充实的生活。<br />
+								 &nbsp;&nbsp;我也是一个热情的人，喜欢交朋友，喜欢和朋友在一起
+								 时那种开心，永远不会嫌朋友多。也是一个很感性的人，我
+								  最讨厌分离时的情景，因为那会让我控制不住自己。同时我
+								  也是一个善良的人，不过我一直觉得善良是我最大的优点也
+								  是最大的缺点。如果将来我会输，一定是输给善良。<br />
+								  &nbsp;&nbsp;当然我也有自己的思想,有属于我的那份原则，可能我的
+								 思想与众不同,但是我的思想也有我的独到之处。<br />
+								 &nbsp;&nbsp;开心了就笑，不开心就过会儿在笑！^-^
+							</p>
+						</div>
+						<img src="images/right.png" class="bianjiao bai3"/>
+						<img src=""/>
+					</div>
+				</div>
+				<!--第四页-->
+				<div class="page page4 pageDown">
+					<div class="container">
+						<img src="images/130x40_636311337662530139.png" class="san-p"/>
+						<img src="images/e9609b9d2436d957.png" class="fujia-s bai1"/>
+						<img src="images/36x54_636310932642266464.png" class="fujia-b bai2"/>
+						<p class="lianxi">联系方式</p>
+						<img src="images/lianxi.png" class="lianxi-pic bai3"/>
+						<div class="contact bai-k">
+							<p class="for">CONTACT<br>
+								<span>FOR ME</span>
+							</p>
+							<div>
+								<p>QQ:2429447025</p>
+								<p>TEL:18733557093</p>
+								<p>E-MAIL:2429447025@qq.com</p>
+								<p>唐山市丰润区任各庄镇</p>
+							</div>
+						</div>
+						<img src="images/dianhua.png" class="dianhua bai1"/>
+					</div>	
+				</div>
+				<!--第五页-->
+				<div class="page page5 pageDown">
+					<div class="container">
+						<img src="images/130x40_636311337662530139.png" class="san-j"/>
+						<p class="jineng bai3">个人技能</p>
+							<img src="images/lianxi.png" class="jineng-k bai-k"/>
+							<ul>
+								<li class="bai3">
+									<img src="images/b307c43c07d67ce0.png"/>
+								</li>
+								<li class="bai-k">
+									<img src="images/e74029fbb39fd81d.png" class="jiaohu"/>
+								</>
+								<li class="bai3">
+									<img src="images/202389c44733d053.png"/>
+								</li>
+								<li class="bai-k">
+									<img src="images/ec2a718a36401aab.png"/>
+								</li>
+								<li class="bai3">	
+									<img src="images/a5430c658d4ca97c.png"/>
+								</li>
+							</ul>	
+					</div>	
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
